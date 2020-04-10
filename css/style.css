@@ -1,6 +1,6 @@
 body{
   margin: 0 auto;
-  background-color: rgb(35, 34, 49);
+  background-color: rgb(42, 40, 58);
   color: #fff;
   font-family: 'serif';
   min-height: 100vh;
@@ -25,7 +25,6 @@ body{
 
 
 .container{
-  /* width: 1400px; */
   max-width: 1400px;
   height: 100vh;
   margin: 0 auto;
@@ -61,19 +60,6 @@ a:hover{
   background: rgb(0, 29, 218);
   /* transition: width 0.2s ease-in-out, background-color 0.2s linear; */
 }
-
-/* 
-header a:hover:after{
-  background: rgb(0, 29, 218);
-  transition: width 0.2s ease-in-out, background-color 0.2s linear; 
-  display: block;
-  content: '';
-  height: 10px;
-  /* bottom: 10px; 
-  /* left: 0; */
-  /* width: 100%;   
-  z-index: -1;
-} */
 
 
 
@@ -127,7 +113,7 @@ footer p{
   font-family: 'Poppins', 'sans-serif';
   font-weight: 600;
   font-size: 2em;
-  margin:0;
+  margin: 0;
 }
 
 
@@ -216,7 +202,7 @@ footer p{
   .content .work{
     padding-top: 20px;
   }
-  
+
   .content .work .status{
     font-weight: 600;
     font-size: 0.8em;
