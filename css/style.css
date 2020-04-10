@@ -1,6 +1,6 @@
 body{
   margin: 0 auto;
-  background-color: #000;
+  background-color: rgb(35, 34, 49);
   color: #fff;
   font-family: 'serif';
   min-height: 100vh;
@@ -24,8 +24,6 @@ body{
 
 
 
-
-
 .container{
   /* width: 1400px; */
   max-width: 1400px;
@@ -33,7 +31,6 @@ body{
   margin: 0 auto;
   position: relative;
 }
-
 
 
 
@@ -53,7 +50,36 @@ header h3{
   margin: 0;
 }
 
+
+a{
+  text-decoration: none;
+  color: #fff;
+
+}
+
+a:hover{
+  background: rgb(0, 29, 218);
+  /* transition: width 0.2s ease-in-out, background-color 0.2s linear; */
+}
+
+/* 
+header a:hover:after{
+  background: rgb(0, 29, 218);
+  transition: width 0.2s ease-in-out, background-color 0.2s linear; 
+  display: block;
+  content: '';
+  height: 10px;
+  /* bottom: 10px; 
+  /* left: 0; */
+  /* width: 100%;   
+  z-index: -1;
+} */
+
+
+
+
 .content{
+  max-width: 100%;
   padding-top: 200px;
   display: flex;
   flex-wrap: wrap;
@@ -67,25 +93,27 @@ header h3{
 
 h1{
   margin: 0;
-  font-size: 3em;
+  font-size: 3rem;
   line-height: 1.4em;
   font-weight: bold;
   /* width: 100%; */
 }
 
 
+
 .content .work .status{
   font-family: 'Poppins', 'sans-serif';
   color: #afafaf;
   font-weight: 600;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2rem;
 }
 
-.content .work p{
-  font-size: 2em;
+.content .work .description{
+  font-size: 2rem;
   line-height: 1.5em;
-  position: relative;
 }
+
+
 
 
 footer{
@@ -128,14 +156,17 @@ footer p{
 
   .content .work{
     padding: 40px 0 0 50%;
+
   }
 
   .content{
     padding: 40px;
   }
 
-  .content .work p{
-    font-size: 1.5em;
+
+  .content .work .description{
+    font-size: 1.5rem;
+    max-width: 400px;
   }
 
   .content .heading{
@@ -144,13 +175,18 @@ footer p{
   }
 
   .content h1{
-    font-size: 2em;
+    font-size: 2.5rem;
   }
 
   footer p{
     padding: 40px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
+
+  .work{
+    width: 100%;
+  }
+
 
 }
 
@@ -172,27 +208,27 @@ footer p{
   }
 
   .content h1{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 400;
   }
 
   .content .work .status{
     font-weight: 600;
     font-size: 0.8em;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1rem;
   }
 
-  .content .work p{
-    font-size: 1.2em;
+  .content .work .description{
+    font-size: 1.2rem;
   }
 
   footer p{
     padding: 30px;
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 
   header .info-mail{
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 
   footer{
