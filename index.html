@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&amp;display=swap" rel="stylesheet">
   <link rel="icon" href="images/favicon.ico">
 </head>
+
 <body>
   <canvas id="noise" class="noise" width="1334" height="1070"></canvas>
   <div class="container">
@@ -17,7 +19,9 @@
         <h3>Hien Dinh Vu</h3>
       </div>
       <div class="info-mail">
-        <span>contact@hdinhvu.com</span>
+        <span class="mail">
+          <a href="mailto:contact@hdinhvu.com">contact@hdinhvu.com</a>
+        </span>
       </div>
 
     </header>
@@ -29,23 +33,24 @@
 
 
       <div class="work">
-      <span class="status">FREELANCE À PARIS & ROUEN</span>
-      <p>Développement/Design d'interface <br>
-         pour site et application web.</p>
+        <span class="status">FREELANCE À PARIS & ROUEN</span>
+        <p class="description">Développement/Design d'interface <br>
+          pour site et application web.</p>
       </div>
 
 
     </div>
 
-  <footer>
-    <p>Disponible prochainement...</p>
-  </footer>
+    <footer>
+      <p>Disponible prochainement...</p>
+    </footer>
 
-  <script type="text/javascript">
-    const noise=()=>{let e,t,n,i,o,a=[],d=0;const r=()=>{const e=t.createImageData(n,i),o=new Uint32Array(e.data.buffer),d=o.length;for(let e=0;e<d;e++)Math.random()<.5&&(o[e]=4278190080);a.push(e)},w=()=>{9===d?d=0:d++,t.putImageData(a[d],0,0),o=window.setTimeout(()=>{window.requestAnimationFrame(w)},40)},s=()=>{n=window.innerWidth,i=window.innerHeight,e.width=n,e.height=i;for(let e=0;e<10;e++)r();w()};e=document.getElementById("noise"),t=e.getContext("2d"),s()};noise();
-  </script>
+    <script type="text/javascript">
+      const noise = () => { let e, t, n, i, o, a = [], d = 0; const r = () => { const e = t.createImageData(n, i), o = new Uint32Array(e.data.buffer), d = o.length; for (let e = 0; e < d; e++)Math.random() < .5 && (o[e] = 4278190080); a.push(e) }, w = () => { 9 === d ? d = 0 : d++, t.putImageData(a[d], 0, 0), o = window.setTimeout(() => { window.requestAnimationFrame(w) }, 40) }, s = () => { n = window.innerWidth, i = window.innerHeight, e.width = n, e.height = i; for (let e = 0; e < 10; e++)r(); w() }; e = document.getElementById("noise"), t = e.getContext("2d"), s() }; noise();
+    </script>
 
 
   </div>
 </body>
+
 </html>
