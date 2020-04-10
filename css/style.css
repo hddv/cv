@@ -213,6 +213,10 @@ footer p{
     font-weight: 400;
   }
 
+  .content .work{
+    padding-top: 20px;
+  }
+  
   .content .work .status{
     font-weight: 600;
     font-size: 0.8em;
